@@ -41,10 +41,10 @@ const mySecond = () => {
 mySecond();
 myFirst();
 // FIFTY
-const MyNumbers = [-1, -3 - 50, 2, 9, 5, 9];
-const posNumber = removeNeg(MyNumbers, (x) => x >= 0);
+const myNumbers = [-1, -3 - 50, 2, 9, 5, 9];
+const posNumber = removeNeg(myNumbers, (x) => x >= 0);
 console.log(posNumber);
-const removeNeg = (numbers, callback) => {
+function removeNeg(numbers, callback) {
     const myArray = [];
     for (const x of numbers) {
         if (callback(x)) {
@@ -52,4 +52,4 @@ const removeNeg = (numbers, callback) => {
         }
     }
     return myArray;
-};
+}
